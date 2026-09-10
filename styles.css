@@ -191,12 +191,13 @@ nav a {
 
 .product-card.unavailable .main-image,
 .product-card.unavailable .thumb img {
-  filter: grayscale(0.4) contrast(0.95);
+  filter: grayscale(0.2) saturate(0.8);
+  opacity: 0.95;
 }
 
 .product-card.unavailable .tag {
-  background: #e5e7eb;
-  color: #4b5563;
+  background: #f3f4f6;
+  color: #374151;
 }
 
 .gallery {
@@ -259,16 +260,17 @@ nav a {
 
 .unavailable-overlay {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(17, 24, 39, 0.45);
-  color: #fff;
-  font-size: 1.05rem;
+  top: 14px;
+  left: 14px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111827;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
 }
 
 .image-modal {
